@@ -1,4 +1,5 @@
 import './App.css';
+import Content from './components/Content';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <div className='flex items-start space-x-2 justify-start w-full'>
           <Navbar />
+          <Content />
       </div>
     </div>
   );

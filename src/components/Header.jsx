@@ -15,21 +15,21 @@ function Header() {
   return (
     <div className='items-center justify-between flex w-full space-x-4 pb-3 pt-4 px-3'>
         {/* logo */}
-        <div className='border-b border-grey-900 w-[25%] flex md:space-x-2 md:pb-5 pb-2 items-center justify-center md:justify-start' >
+        <div className='border-b border-grey-900 w-[25%] flex md:space-x-2 md:pb-6 pb-2  items-center justify-center md:justify-start' >
             <img 
                 className='md:w-12 md:h-12 w-10 h-10'
                 src='https://cdn-icons-png.flaticon.com/512/2830/2830284.png'
                 alt='logo'
 
             />
-            <h1 className='self-center hidden md:inline md:font-bold md:text-xl text-md'>
+            <h1 className='self-center hidden lg:inline md:font-bold md:text-xl text-md'>
                 P2pBank
             </h1>
         </div>
 
         {/* NavLinks */}
 
-        <div className='border-b pb-3 border-grey-900 w-[140%] items-center justify-center flex space-x-2'>
+        <div className='border-b pb-5 border-grey-900 w-[140%] items-center justify-center flex space-x-2'>
             {navLinks.map((link) => (
                 <div onClick={()=>setActive(link)} className='relative items-center justify-center flex'>
                     <NavLink title={link} key={link} />
@@ -42,7 +42,7 @@ function Header() {
         
         { /* Login */}
 
-        <div className='border-b border-grey-900 pb-5 pt-4 hidden md:flex items-left justify-left px-3 space-x-6 w-[60%]'>
+        <div className='border-b border-grey-900 pb-6 pt-4 hidden md:flex items-end justify-end px-3 space-x-6 w-[60%]'>
             <div>{search_icon}</div>
             <div>{notif_icon}</div>
             <img src={userImg} alt='user-Image' className='w-8 h-8 rounded-full object-center object-cover' />
