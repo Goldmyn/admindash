@@ -42,7 +42,7 @@ function Navbar() {
             <h1 className="font-bold text-lg"> P2pBank. </h1>
             <p className="text-sm">
               {" "}
-              2022 P2pBank MIT license  from 15.08.2022
+              2022 P2pBank MIT license  from Marius Nwokolo
             </p>
           </div>
         </div>
@@ -76,9 +76,9 @@ function Navbar() {
                     <a className="footer-link"> Loans </a>
                   </div>
                   <div className="space-y-3 text-black">
-                    <h1 className="font-bold text-lg"> Openbank. </h1>
+                    <h1 className="font-bold text-lg"> P2pBank. </h1>
                     <p className="text-sm">
-                      2022 openbank license #19 from 06.05.2022
+                    2022 P2pBank MIT license  from Marius Nwokolo
                     </p>
                   </div>
                 </div>

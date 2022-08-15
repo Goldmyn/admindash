@@ -244,7 +244,7 @@ export const pay_icon = (
 
             <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 self-center md:inline hidden "
+            className="h-6 w-6 self-center md:inline hidden text-black"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

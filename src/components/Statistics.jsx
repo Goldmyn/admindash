@@ -49,8 +49,8 @@ function Statistics() {
               </h1>
               <Progress
                 colorScheme="green"
-                className="w-[25%] lg:inline hidden "
-                size="sm"
+                className="w-[55%] lg:inline hidden rounded "
+                size="md"
                 value={item.value}
               />
               <h1 className="w-[25%] items-end justify-end flex font-medium text-gray text-xl px-6 ">
