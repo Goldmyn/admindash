@@ -42,7 +42,7 @@ function Content() {
                             {settings_icon}
                         </div>
                     </div>
-                    <div className='py-3 px-3 w-full xl:col-span-3  col-span-3 col-span-2 xl:flex items-center justify-between xl:space-y-0 space-y-0 space-y-4 xl:space-x-4'>
+                    <div className='py-3 px-3 w-full xl:col-span-3  col-span-3 col-span-2 md:flex items-center justify-between xl:space-y-0 space-y-0 space-y-4 xl:space-x-4'>
                         <div className='w-full  items-start justify-start xl:items-center xl:justify-center flex flex-col'>
                             <h1 className='font-medium text-gray-500'>
                                 Cash Available
