@@ -1,7 +1,12 @@
+import { ChakraProvider } from '@chakra-ui/react';
 import React from 'react'
 import { useState } from 'react';
 import { nav_icon, notif_icon, search_icon } from '../utils/svgs';
-import NavLink from './links/NavLink'
+import NavLink from './links/NavLink';
+import { IconButton } from "@chakra-ui/button";
+import { useColorMode } from "@chakra-ui/color-mode";
+import { Flex, VStack } from "@chakra-ui/layout";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 /* An array for the Nav Links */
 
@@ -10,7 +15,10 @@ const userImg = 'https://images.unsplash.com/photo-1509839862600-309617c3201e?ix
 
 function Header() {
 
-    const [active, setActive] = useState('Overview')
+    const { colorMode, toggleColorMode } = useColorMode(); 
+    const isDark = colorMode === "dark";
+
+    const  [active, setActive] = useState('Overview')
 
   return (
     <div className='items-center justify-between flex w-full space-x-4 pb-3 pt-4 px-3'>
@@ -29,11 +37,11 @@ function Header() {
 
         {/* NavLinks */}
 
-        <div className='border-b pb-5 border-grey-900 w-[140%] items-center justify-center flex space-x-2'>
+        <div className='border-b pb-5  border-grey-900 w-[140%]   items-center justify-center flex space-x-2'>
             {navLinks.map((link) => (
-                <div onClick={()=>setActive(link)} className='relative items-center justify-center flex'>
+                <div onClick={()=>setActive(link)} className='relative   items-center justify-center flex'>
                     <NavLink title={link} key={link} />
-                    <div className={ ` ${link === active ? 'items-center justify-center flex absolute -bottom-3' : 'hidden'}`}>
+                    <div className={ ` ${link === active ? 'items-center  justify-center flex absolute -bottom-3' : 'hidden'}`}>
                         {nav_icon}
                     </div>
                 </div>
@@ -46,6 +54,16 @@ function Header() {
             <div>{search_icon}</div>
             <div>{notif_icon}</div>
             <img src={userImg} alt='user-Image' className='w-8 h-8 rounded-full object-center object-cover' />
+            <div>
+            <ChakraProvider>
+                <VStack>
+                <Flex w="100%">
+                <IconButton ml={9} icon={isDark ? <FaSun /> : <FaMoon />} 
+                isRound="true" onClick={toggleColorMode} style={{color:'black', backgroundColor:'gray'}}></IconButton>
+                </Flex>
+                </VStack>
+            </ChakraProvider>
+            </div>
         </div>
     </div>
   );
