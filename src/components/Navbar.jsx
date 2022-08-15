@@ -23,10 +23,14 @@ function Navbar() {
       )}
       <div className="md:w-[250px]  h-[91%] hidden overflow-hidden md:flex flex-col items-center justify-between px-3">
         {/* cards */}
+        
         <div className="pt-12 pb-4 border-b border-gray-900 w-full space-y-4 max-h-[400px] h-[350px] overflow-y-scroll scrollbar-hide">
           <Card type="mastercard" />
           <Card type="visa" />
+          <Card type="mastercard" />
+          <Card type="visa" />
         </div>
+        <hr className="pt-6 text-grey"></hr>
         <div className=" my-2 items-center justify-center flex w-full border-dashed border rounded-lg border-gray-400 py-3">
           <button className="w-full"> Add Card </button>
         </div>
