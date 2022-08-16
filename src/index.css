@@ -10,3 +10,6 @@
         @apply outline-none border-none py-1 selection:bg-gray-900 selection:text-gray-100
     }
 }
+.some-long-class{
+    @apply pt-12 pb-4 border-b border-gray-900 w-full space-y-4 max-h-[400px] h-[350px] overflow-y-scroll scrollbar-hide;
+}

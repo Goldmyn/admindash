@@ -24,7 +24,7 @@ function Navbar() {
       <div className="md:w-[250px]  h-[91%] hidden overflow-hidden md:flex flex-col items-center justify-between px-3">
         {/* cards */}
         
-        <div className="pt-12 pb-4 border-b border-gray-900 w-full space-y-4 max-h-[400px] h-[350px] overflow-y-scroll scrollbar-hide">
+        <div className="some-long-class">
           <Card type="mastercard" />
           <Card type="visa" />
           <Card type="mastercard" />
@@ -38,7 +38,7 @@ function Navbar() {
         {/* footer */}
         <div className="pb-2 pt-[150px] px-3  flex flex-col space-y-4 items-start justify-between  w-full h-full">
           <div className="flex flex-col items-start justify-center w-full space-y-4 pb-6 border-b border-gray-900">
-            <a className="footer-link"> Deposits </a>
+            <a href="#" className="footer-link"> Deposits </a>
             <a className="footer-link"> Loyalty Program </a>
             <a className="footer-link"> Loans </a>
           </div>
