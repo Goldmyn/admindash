@@ -79,7 +79,7 @@ function Navbar() {
                     <a className="footer-link"> Loyalty Program </a>
                     <a className="footer-link"> Loans </a>
                   </div>
-                  <div className="space-y-3 text-black">
+                  <div className="space-y-3 text-gray">
                     <h1 className="font-bold text-lg"> P2pBank. </h1>
                     <p className="text-sm">
                     2022 P2pBank MIT license  from Marius Nwokolo
