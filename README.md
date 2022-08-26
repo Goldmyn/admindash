@@ -2,6 +2,8 @@ Follow the link below to view online
 
 https://p2pbank.onrender.com/
 
+Best view on Tablet and Laptop Screens.
+
 
 # Getting Started with Create React App
 
